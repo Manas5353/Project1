@@ -146,7 +146,7 @@ p {
   }
 }
 main {
-  min-height: 100vh;
+  min-height: 10vh;
   display: grid;
   place-items: center;
 }
@@ -161,7 +161,7 @@ nav {
   height: 3rem;
   display: grid;
   align-items: center;
-  box-shadow: var(--dark-shadow);
+  box-shadow: var(--light-shadow);
 }
 .nav-center {
   width: 90vw;
@@ -173,7 +173,7 @@ nav {
 }
 .nav-center h4 {
   margin-bottom: 0;
-  color: var(--clr-primary-5);
+  color: var(--clr-primary-4);
 }
 .nav-links {
   display: flex;
@@ -195,14 +195,15 @@ Container
 ===============
 */
 main {
-  min-height: calc(100vh - 3rem);
+  min-height: calc(100vh - 1rem);
   display: grid;
   place-items: center;
 }
 .container {
   text-align: center;
 }
-.container h2 {
+.container h2,
+h1 {
   background: var(--clr-black);
   color: var(--clr-white);
   padding: 1rem;
@@ -210,7 +211,7 @@ main {
   margin-bottom: 2.5rem;
 }
 .color {
-  color: var(--clr-primary-5);
+  color: var(--clr-primary-4);
 }
 .btn-hero {
   font-family: var(--ff-primary);
