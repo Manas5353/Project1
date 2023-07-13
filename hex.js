@@ -4,8 +4,12 @@ const colour = document.querySelector(".color"); //color span
 btn.addEventListener("click", function () {
   let hexColor = "#";
   for (let i = 0; i < 6; i++) {
-    hexColor += hex[0];
+    hexColor += hex[getRandomColor()];
   }
   colour.textContent = hexColor;
   document.body.style.backgroundColor = hexColor;
+
+  function getRandomColor() {
+    return Math.floor(Math.random() * hex.length);
+  }
 });
